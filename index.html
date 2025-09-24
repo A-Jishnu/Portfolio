@@ -1,159 +1,320 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name – Frontend Developer skilled in HTML, CSS, JavaScript, and React.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo">Your Name</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="mobile-menu" aria-label="Toggle menu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-container">
-      <div class="hero-text">
-        <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-        <h2>Frontend Developer</h2>
-        <p>I design and build responsive websites with clean, maintainable code. Passionate about UI/UX and modern web technologies.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View Work</a>
-          <a href="#contact" class="btn btn-secondary">Contact</a>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Your Name</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="profile-placeholder.svg" alt="Profile illustration">
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I specialize in HTML, CSS, and JavaScript, creating modern and accessible web apps. My goal is to blend functionality with simple, effective design.</p>
-      <p>I focus on clean code, performance, and user experience. From responsive layouts to interactive features, I ensure projects work seamlessly across devices.</p>
-      <div class="about-stats">
-        <div><strong>3+</strong> Years Experience</div>
-        <div><strong>50+</strong> Projects Completed</div>
-        <div><strong>100%</strong> Client Satisfaction</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML5 – 95%</li>
-        <li>CSS3 / Sass – 90%</li>
-        <li>JavaScript (ES6+) – 85%</li>
-        <li>React.js – 80%</li>
-        <li>Git & GitHub – 90%</li>
-        <li>Responsive Design – 95%</li>
-        <li>Performance Optimization – 85%</li>
-        <li>Cross-browser Testing – 88%</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="experience">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="date">2022 – Present</span>
-          <h3>Senior Frontend Developer – Tech Solutions Inc.</h3>
-          <p>Led frontend development for high-traffic apps, built reusable components, and mentored juniors.</p>
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hello, I'm <span class="highlight">Your Name</span></h1>
+                    <h2 class="hero-subtitle">Frontend Developer & UI/UX Enthusiast</h2>
+                    <p class="hero-description">
+                        I create beautiful, responsive websites and applications with clean code 
+                        and exceptional user experiences. Passionate about modern web technologies 
+                        and best practices.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="100" fill="#e1e8ed"/>
+                            <circle cx="100" cy="80" r="30" fill="#95a5a6"/>
+                            <path d="M60 150 C60 130, 80 120, 100 120 C120 120, 140 130, 140 150 L140 200 L60 200 Z" fill="#95a5a6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="timeline-item">
-          <span class="date">2020 – 2022</span>
-          <h3>Frontend Developer – Digital Agency Co.</h3>
-          <p>Created custom websites, focusing on responsive design, cross-browser compatibility, and accessibility.</p>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating 
+                        modern, accessible web applications. My approach combines technical expertise 
+                        with a keen eye for design, ensuring every project delivers both functionality 
+                        and visual appeal.
+                    </p>
+                    <p class="about-paragraph">
+                        I believe in writing clean, maintainable code and staying current with 
+                        industry best practices. Whether working on responsive layouts, optimizing 
+                        performance, or implementing interactive features, I focus on creating 
+                        solutions that provide exceptional user experiences.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item"><div class="stat-number">3+</div><div class="stat-label">Years Experience</div></div>
+                        <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Projects Completed</div></div>
+                        <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Client Satisfaction</div></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="timeline-item">
-          <span class="date">2019 – 2020</span>
-          <h3>Junior Web Developer – StartUp Hub</h3>
-          <p>Worked on landing pages and MVPs, learning modern frameworks and contributing to open source.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">Frontend Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">HTML5</div><div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">CSS3 / Sass</div><div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">JavaScript (ES6+)</div><div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">React.js</div><div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">Tools & Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><div class="skill-name">Git & GitHub</div><div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Responsive Design</div><div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Performance Optimization</div><div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></div>
+                        <div class="skill-item"><div class="skill-name">Cross-browser Testing</div><div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <article class="project-card">
-          <img src="ecommerce.jpg" alt="E-commerce platform screenshot">
-          <h3>E-commerce Platform</h3>
-          <p>Responsive online store with cart, payments, and product filtering. Built with React.</p>
-        </article>
-        <article class="project-card">
-          <img src="dashboard.jpg" alt="Analytics dashboard screenshot">
-          <h3>Analytics Dashboard</h3>
-          <p>Interactive data visualization with charts, filters, and dark mode.</p>
-        </article>
-        <article class="project-card">
-          <img src="taskapp.jpg" alt="Task management app screenshot">
-          <h3>Task Management App</h3>
-          <p>Drag-and-drop tasks with filtering and offline support.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Senior Frontend Developer</h3>
+                        <h4 class="company">Tech Solutions Inc.</h4>
+                        <p class="job-description">
+                            Led frontend development for multiple high-traffic web applications. 
+                            Implemented responsive design patterns, optimized performance, and 
+                            mentored junior developers on best practices.
+                        </p>
+                        <ul class="achievements">
+                            <li>Improved page load times by 40% through code optimization</li>
+                            <li>Built reusable component library used across 5+ projects</li>
+                            <li>Collaborated with UX team to enhance user experience</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Frontend Developer</h3>
+                        <h4 class="company">Digital Agency Co.</h4>
+                        <p class="job-description">
+                            Developed custom websites and web applications for diverse clients. 
+                            Focused on creating pixel-perfect implementations from design mockups 
+                            while ensuring cross-browser compatibility.
+                        </p>
+                        <ul class="achievements">
+                            <li>Delivered 25+ successful client projects</li>
+                            <li>Specialized in responsive e-commerce solutions</li>
+                            <li>Implemented accessibility standards (WCAG 2.1)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019 - 2020</div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Junior Web Developer</h3>
+                        <h4 class="company">StartUp Hub</h4>
+                        <p class="job-description">
+                            Started my professional journey building modern web interfaces. 
+                            Gained experience in HTML5, CSS3, and JavaScript while working 
+                            on various startup projects and MVPs.
+                        </p>
+                        <ul class="achievements">
+                            <li>Built responsive landing pages for 10+ startups</li>
+                            <li>Learned modern JavaScript frameworks and tools</li>
+                            <li>Contributed to open-source projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Let’s connect! Reach me via email or fill out the form below.</p>
-      <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-8900</a></p>
-        <p><strong>Location:</strong> Your City, Country</p>
-      </div>
-      <form id="contact-form" class="contact-form">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea name="message" rows="5" placeholder="Message" required></textarea>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
-    </div>
-  </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                <a href="#" class="project-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">
+                            Modern e-commerce solution with responsive design, shopping cart 
+                            functionality, and payment integration. Built with React and 
+                            styled components.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Portfolio Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                <a href="#" class="project-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Interactive dashboard for data visualization with real-time updates. 
+                            Features responsive charts, filtering options, and dark mode toggle.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">Sass</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                <a href="#" class="project-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            Productivity application with drag-and-drop functionality, 
+                            task filtering, and local storage. Clean interface with 
+                            smooth animations.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Vanilla JS</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">LocalStorage</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Your Name. Built with HTML, CSS & JS.</p>
-      <a href="#home">Back to Top</a>
-    </div>
-  </footer>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        I'm always interested in discussing new opportunities and exciting projects. 
+                        Whether you need a website built from scratch or want to improve an existing one, 
+                        let's talk about how I can help bring your vision to life.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item"><strong>Email:</strong><a href="mailto:your.email@example.com">your.email@example.com</a></div>
+                        <div class="contact-item"><strong>Phone:</strong><a href="tel:+1234567890">+1 (234) 567-8900</a></div>
+                        <div class="contact-item"><strong>Location:</strong><span>Your City, Country</span></div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank">LinkedIn</a>
+                        <a href="#" class="social-link" target="_blank">GitHub</a>
+                        <a href="#" class="social-link" target="_blank">Twitter</a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Your Name. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="footer-links"><a href="#home" class="footer-link">Back to Top</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
