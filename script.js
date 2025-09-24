@@ -1,4 +1,3 @@
-// Mobile Navigation Toggle
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.getElementById('nav-menu');
 
@@ -7,7 +6,6 @@ mobileMenu.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on nav links
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.remove('active');
@@ -15,13 +13,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const offsetTop = target.offsetTop - 70; // Account for fixed navbar
+            const offsetTop = target.offsetTop - 70;
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -30,7 +27,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -42,7 +38,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Animate skill bars on scroll
 const observerOptions = {
     threshold: 0.5,
     rootMargin: '0px 0px -50px 0px'
@@ -64,13 +59,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe skills section
 const skillsSection = document.querySelector('.skills');
 if (skillsSection) {
     observer.observe(skillsSection);
 }
 
-// Animate statistics on scroll
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -96,19 +89,16 @@ const statsObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe about section for stats animation
 const aboutSection = document.querySelector('.about');
 if (aboutSection) {
     statsObserver.observe(aboutSection);
 }
 
-// Contact form handling
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Basic form validation
         const formData = new FormData(this);
         const name = formData.get('name');
         const email = formData.get('email');
@@ -120,21 +110,18 @@ if (contactForm) {
             return;
         }
         
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Please enter a valid email address.');
             return;
         }
         
-        // Simulate form submission
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Simulate API call delay
         setTimeout(() => {
             alert('Thank you for your message! I\'ll get back to you soon.');
             this.reset();
@@ -144,19 +131,16 @@ if (contactForm) {
     });
 }
 
-// Add loading animation for images
 const images = document.querySelectorAll('img');
 images.forEach(img => {
     img.addEventListener('load', function() {
         this.style.opacity = '1';
     });
     
-    // Set initial opacity for smooth loading
     img.style.opacity = '0';
     img.style.transition = 'opacity 0.3s ease';
 });
 
-// Intersection Observer for fade-in animations
 const fadeElements = document.querySelectorAll('.project-card, .timeline-item, .skill-item');
 const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -171,7 +155,6 @@ const fadeObserver = new IntersectionObserver((entries) => {
     rootMargin: '0px 0px -50px 0px'
 });
 
-// Apply initial styles and observe elements
 fadeElements.forEach(element => {
     element.style.opacity = '0';
     element.style.transform = 'translateY(30px)';
@@ -179,16 +162,13 @@ fadeElements.forEach(element => {
     fadeObserver.observe(element);
 });
 
-// Keyboard navigation support
 document.addEventListener('keydown', function(e) {
-    // Close mobile menu with Escape key
     if (e.key === 'Escape' && navMenu.classList.contains('active')) {
         mobileMenu.classList.remove('active');
         navMenu.classList.remove('active');
     }
 });
 
-// Performance optimization: Debounce scroll events
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -201,7 +181,6 @@ function debounce(func, wait) {
     };
 }
 
-// Apply debouncing to scroll event
 const debouncedScrollHandler = debounce(() => {
     if (window.scrollY > 50) {
         navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
