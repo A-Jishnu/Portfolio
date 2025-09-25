@@ -1,101 +1,105 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Web Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Your Name</a>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Your Name</a>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+        <h2>Frontend Developer</h2>
+        <p>I create responsive and elegant websites with clean code.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
-    </nav>
+      </div>
+      <div class="hero-image">
+        <img src="your-photo.png" alt="Your Photo">
+      </div>
+    </div>
+  </section>
 
-    <!-- Updated Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Hello, I'm <span class="highlight">Your Name</span></h1>
-                    <h2 class="hero-subtitle">Frontend Developer & UI/UX Enthusiast</h2>
-                    <p class="hero-description">
-                        I create beautiful, responsive websites and applications with clean code 
-                        and exceptional user experiences. Passionate about modern web technologies 
-                        and best practices.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="d52b86ba-1ef1-43cb-b1c9-1fd64d0a9f61.png" alt="Your Photo">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Hero Section -->
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate frontend developer who loves crafting user-friendly
+      web experiences. Skilled in HTML, CSS, JavaScript, and modern frameworks.
+    </p>
+  </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-paragraph">
-                        With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating 
-                        modern, accessible web applications. My approach combines technical expertise 
-                        with a keen eye for design, ensuring every project delivers both functionality 
-                        and visual appeal.
-                    </p>
-                    <p class="about-paragraph">
-                        I believe in writing clean, maintainable code and staying current with 
-                        industry best practices. Whether working on responsive layouts, optimizing 
-                        performance, or implementing interactive features, I focus on creating 
-                        solutions that provide exceptional user experiences.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item"><div class="stat-number">3+</div><div class="stat-label">Years Experience</div></div>
-                        <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Projects Completed</div></div>
-                        <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Client Satisfaction</div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="skills" class="section container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Node.js</div>
+      <div class="card">Git/GitHub</div>
+    </div>
+  </section>
 
-    <!-- Rest of your sections (skills, experience, projects, contact, footer) remain unchanged -->
+  <section id="experience" class="section container">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Frontend Developer - Company Name</h3>
+      <p>2022 - Present</p>
+      <p>Worked on building responsive web applications and modern UI features.</p>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2024 Your Name. Built with HTML, CSS, and JavaScript.</p>
-                </div>
-                <div class="footer-links"><a href="#home" class="footer-link">Back to Top</a></div>
-            </div>
-        </div>
-    </footer>
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Todo App</h3>
+        <p>A task management app using local storage for saving tasks.</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
